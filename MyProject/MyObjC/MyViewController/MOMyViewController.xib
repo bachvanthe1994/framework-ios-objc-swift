@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MOMyViewController">
+            <connections>
+                <outlet property="imageView" destination="Ll1-Sa-4KO" id="QJE-0R-kpR"/>
+                <outlet property="lbl" destination="aLq-UW-baz" id="IF7-Nh-qhe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLq-UW-baz">
+                    <rect key="frame" x="186" y="144" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3t-Hn-EWb">
+                    <rect key="frame" x="183" y="185" width="48" height="30"/>
+                    <state key="normal" title="CLOSE"/>
+                    <connections>
+                        <action selector="closePressed:" destination="-1" eventType="touchUpInside" id="ej9-ml-MhG"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1372" translatesAutoresizingMaskIntoConstraints="NO" id="Szd-M6-UJR">
+                    <rect key="frame" x="157" y="235" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2QK-X9-zYJ"/>
+                        <constraint firstAttribute="width" constant="100" id="T0x-F7-NRC"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ll1-Sa-4KO">
+                    <rect key="frame" x="157" y="355" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="9u1-n4-5sx"/>
+                        <constraint firstAttribute="height" constant="100" id="Ur2-o5-P2f"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="w3t-Hn-EWb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Ny-58-CVF"/>
+                <constraint firstItem="aLq-UW-baz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="917-OY-Pw9"/>
+                <constraint firstItem="Szd-M6-UJR" firstAttribute="top" secondItem="w3t-Hn-EWb" secondAttribute="bottom" constant="20" id="CJK-qS-Cbh"/>
+                <constraint firstItem="w3t-Hn-EWb" firstAttribute="top" secondItem="aLq-UW-baz" secondAttribute="bottom" constant="20" id="SDa-xc-C7a"/>
+                <constraint firstItem="Ll1-Sa-4KO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aRt-FW-UpL"/>
+                <constraint firstItem="Ll1-Sa-4KO" firstAttribute="top" secondItem="Szd-M6-UJR" secondAttribute="bottom" constant="20" id="hJT-1W-R73"/>
+                <constraint firstItem="Szd-M6-UJR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x2a-C7-xvB"/>
+                <constraint firstItem="aLq-UW-baz" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="yjt-y3-9OJ"/>
+            </constraints>
+            <point key="canvasLocation" x="17" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_1372" width="205" height="205"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
