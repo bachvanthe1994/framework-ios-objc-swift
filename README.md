@@ -1,5 +1,8 @@
 # framework-ios-objc-swift
 
+# app
+- Objtive-c
+
 # framework objc
 - Public Class
 - Open ViewController
@@ -10,4 +13,4 @@
 - Public Class
 
 # gen xcframework
-- run with ruby code
+- Run script with ruby
